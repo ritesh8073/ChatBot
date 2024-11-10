@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet" href="style.css">
+  <title>Chatbot</title>
+</head>
+<body>
+  <div class="chatbot" role="dialog" aria-labelledby="chatbot-header" aria-live="polite">
+    <header id="chatbot-header">
+      <h2>Chat-Assist</h2>
+      <button class="material-symbols-outlined" aria-label="Close chat" onclick="closeChat()">close</button>
+    </header>
+    <ul class="chatbox" aria-live="polite"></ul>
+    <div class="chat-input">
+      <label for="userInput" class="sr-only">Enter your query</label>
+      <textarea id="userInput" placeholder="Type your message..." required aria-label="Chat input"></textarea>
+      <button onclick="handleUserInput()" aria-label="Send message">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
